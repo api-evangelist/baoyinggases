@@ -1,23 +1,53 @@
 aid: baoyinggases
+
 name: Baoyinggases
-description: 'Baoyinggases is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Baoyinggases is a stub entry in the API Evangelist catalog, representing a Chinese manufacturing and energy company that appears in secondary market data but for which no public API documentation, official website, or developer portal could be reliably identified through automated searches. This placeholder entry records the basic corporate metadata and maintains a slot for future enrichment as additional information, such as an official domain, API specifications, or documentation, becomes available. It enables the catalog to track the existence of the entity while acknowledging the current lack of accessible technical resources.'
+
 url: https://raw.githubusercontent.com/api-evangelist/baoyinggases/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Energy
+- Gas
+- Manufacturing
+- China
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: null
+
 common:
+- type: Hosts
+  url: hosts/baoyinggases-hosts.yml
+- type: Vendors
+  url: vendors/baoyinggases-vendors.yml
+- type: DomainSecurity
+  url: security/baoyinggases-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/baoyinggases
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
